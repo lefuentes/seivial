@@ -1,34 +1,108 @@
-<div class="main d-flex flex-column mat-elevation-z8">
-  <div class="header mat-elevation-z8 animate__animated animate__fadeInDown animate__delay-1s d-flex align-items-center justify-content-between">
+<div class="main section d-flex flex-column mat-elevation-z2">
+  <div
+    class="header animate__animated animate__fadeInDown animate__delay-1s d-flex align-items-center justify-content-between"
+  >
     <h1 style="font-weight: 300;">Seivial</h1>
-    <div class="d-none d-lg-flex d-xl-flex ">
+    <div class="d-none d-lg-flex d-xl-flex">
       <div class="option">
-        <a href="#">
+        <a (click)="onClick('articles')">
           Articulos
         </a>
       </div>
       <div class="option">
-        <a href="#">
+        <a (click)="onClick('services')">
           Servicios
         </a>
       </div>
       <div class="option">
-        <a href="#">
+        <a (click)="onClick('our')">
           Nosotros
         </a>
       </div>
       <div class="option">
-        <a href="#">
+        <a (click)="onClick('contact')">
           Contacto
         </a>
       </div>
     </div>
   </div>
-  <div class="body flex-grow-1 d-flex flex-column justify-content-center">
-    <h1 class="header1 animate__animated animate__fadeInDown">Bienvenido a Seivial</h1>
-    <h3 class="header2  animate__animated animate__fadeInDown animate__delay-1s">Seguridad e Investigación VIAL</h3>
+  <div class="body flex-grow-1 d-flex flex-column justify-content-start">
+    <h1 class="header1 animate__animated animate__fadeInDown">
+      Bienvenido a Seivial
+    </h1>
+    <h3 class="header2 animate__animated animate__fadeInDown animate__delay-1s">
+      Seguridad e Investigación VIAL
+    </h3>
   </div>
 </div>
-<div class="articles">
- Articulos
+<div class="section d-flex flex-column" id="articles">
+  <div class="header">
+    <h1 class="header1 animate__animated animate__fadeInDown">
+      Nuestros Articulos
+    </h1>
+  </div>
+  <div class="body flex-grow-1 d-flex" style="height: 100%; padding: 20px;">
+    <div class="row" style="width: 100%; height: 100%;">
+      <div class="col-12 col-xl-4">
+        <mat-card class="mat-elevation-z8" style="height: 100%;">
+          <mat-card-header>
+            <mat-card-title>
+              Articulo 1
+            </mat-card-title>
+            <mat-card-subtitle>
+              Subitutlo 1
+            </mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section d-flex flex-column" id="services">
+  <div class="header">
+    <h1 class="header1 animate__animated animate__fadeInDown">Servicios</h1>
+  </div>
+  <div class="body flex-grow-1 d-flex" style="height: 100%; padding: 20px;">
+    <div class="row" style="width: 100%; height: 100%;">
+      <div class="col-12 col-xl-4">
+        <mat-card class="mat-elevation-z8" style="height: 100%;">
+          <mat-card-header>
+            <mat-card-title>
+              Articulo 1
+            </mat-card-title>
+            <mat-card-subtitle>
+              Subitutlo 1
+            </mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section d-flex flex-column" id="our">
+  <div class="header">
+    <h1 class="header1 animate__animated animate__fadeInDown">Nosotros</h1>
+  </div>
+  <div class="body flex-grow-1 d-flex justify-content-center" style="height: 100%; padding: 20px;">
+    <div class="person animate__animated animate__fadeInDown">
+      <div class="person-avatar">
+        <img src="/assets/default-user.png" class="person-image">
+      </div>
+      <div class="person-title">
+        Pablo Fuentes
+      </div>
+      <p>
+        Licenciado en Accidentología y Prevención Vial
+      </p>
+    </div>
+  </div>
+</div>
+<div class="section d-flex flex-column" id="contact">
+  <div class="header">
+    <h1 class="header1 animate__animated animate__fadeInDown">Contacto</h1>
+  </div>
+  <div
+    class="body flex-grow-1 d-flex justify-content-center"
+    style="height: 100%; padding: 20px;"
+  ></div>
 </div>
